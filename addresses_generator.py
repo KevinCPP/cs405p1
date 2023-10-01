@@ -1,5 +1,6 @@
 # Generating a list of 30 addresses, mixing business and consumer addresses, from different cities and states.
 addresses = [
+    "LexLive\n301 S Broadway\nLexington,KY 40508"
     "Mr. Ray L. Hyatt Jr.\n300 Rose Street Room 102 Hardymon Building\nLexington, KY 40506",
     "Mr. Ray L. Hyatt Jr.\n301 Hilltop Avenue, Room 102\nLexington, KY 40506",
     "John Wick\n82 Beaver Street Room 1301\nNew York, NY 10005",
