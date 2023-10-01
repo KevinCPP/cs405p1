@@ -59,18 +59,12 @@ def parse_and_insert_addresses(cursor, raw_addresses):
         
         insert_address(cursor, entity_name, street_address, city, state, zip_code)
 
-# Main function to execute the script
-
 # Function to read addresses from the file
 def read_addresses_from_file(file_path):
     with open(file_path, 'r') as f:
         return f.read().strip().split('\n\n')  # Assume each address is separated by a blank line
 
-# In the main() function, add the following line to read the addresses:
-raw_addresses = read_addresses_from_file('addresses.txt')
-
 def create_addresses_table(sql_creds):
-    
     raw_addresses = read_addresses_from_file('addresses.txt')
     connection = connect_to_db(sql_creds.host, sql_creds.username, sql_creds.password, sql_creds.database)
     if connection is not None:
