@@ -3,9 +3,9 @@ from addresses import create_addresses_table
 
 class sql_credentials:
     def __init__(self):
-        username = "knco259"
-        password = "<password>"
-        database = username
+        self.username = "knco259"
+        self.password = "<password>"
+        self.database = self.username
 
 if __name__ == "__main__":
     # generate addresses.txt
