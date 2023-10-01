@@ -4,10 +4,10 @@ from addresses import create_addresses_table
 class SQL_Credentials:
     def __init__(self):
         self.username = "knco259"
-        self.password = "<password>"
+        self.password = "Papermario2001"
         self.database = self.username
 
-if __name__ == "__main__":
+def main():
     # generate addresses.txt
     generate_text_file()
     
@@ -17,3 +17,6 @@ if __name__ == "__main__":
     # create addresses table
     create_addresses_table(sql_creds)
       
+
+if __name__ == "__main__":
+    main() 
