@@ -1,0 +1,89 @@
+    Location: Lexington, KY
+    Business Name: Mr. Ray L. Hyatt Jr.
+    Date: 2023-09-20
+    Total Sale: $120
+    Number of Items Sold: 3
+
+    Location: New York, NY
+    Business Name: John Wick
+    Date: 2023-09-15
+    Total Sale: $200
+    Number of Items Sold: 1
+
+    Location: New York, NY
+    Business Name: Tony Stark
+    Date: 2023-09-10
+    Total Sale: $500
+    Number of Items Sold: 2
+
+    Location: New York, NY
+    Business Name: Dr. Stephen Strange
+    Date: 2023-09-05
+    Total Sale: $70
+    Number of Items Sold: 5
+
+    Location: Lexington, KY
+    Business Name: Bowman F. Wildcat
+    Date: 2023-08-30
+    Total Sale: $90
+    Number of Items Sold: 4
+
+    Location: Dallas, TX
+    Business Name: Bob Porter c/o Intech
+    Date: 2023-08-25
+    Total Sale: $300
+    Number of Items Sold: 3
+
+    Location: New York, NY
+    Business Name: Natasha Romanoff
+    Date: 2023-08-20
+    Total Sale: $80
+    Number of Items Sold: 2
+
+    Location: Dayton, OH
+    Business Name: Bruce Banner
+    Date: 2023-08-15
+    Total Sale: $150
+    Number of Items Sold: 6
+
+    Location: Waverly, IA
+    Business Name: Clint Barton
+    Date: 2023-08-10
+    Total Sale: $100
+    Number of Items Sold: 1
+
+    Location: Asgard, AS
+    Business Name: Thor Odinson
+    Date: 2023-08-05
+    Total Sale: $400
+    Number of Items Sold: 4
+
+    Location: Gotham, NY
+    Business Name: Bruce Wayne
+    Date: 2023-07-30
+    Total Sale: $220
+    Number of Items Sold: 2
+
+    Location: Washington, DC
+    Business Name: Diana Prince
+    Date: 2023-07-25
+    Total Sale: $180
+    Number of Items Sold: 5
+
+    Location: Metropolis, IL
+    Business Name: Clark Kent
+    Date: 2023-07-20
+    Total Sale: $130
+    Number of Items Sold: 3
+
+    Location: Central City, MO
+    Business Name: Barry Allen
+    Date: 2023-07-15
+    Total Sale: $90
+    Number of Items Sold: 4
+
+    Location: London, UK
+    Business Name: James Bond
+    Date: 2023-07-10
+    Total Sale: $160
+    Number of Items Sold: 2

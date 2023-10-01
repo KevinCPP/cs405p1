@@ -23,7 +23,7 @@ def close_db(connection):
         print("Database connection closed")
 
 # Function to create the address table
-def create_address_table(cursor):
+def initialize_address_table(cursor):
     create_table_query = '''
     CREATE TABLE IF NOT EXISTS Addresses (
         ID INT AUTO_INCREMENT PRIMARY KEY,
@@ -59,13 +59,6 @@ def parse_and_insert_addresses(cursor, raw_addresses):
         
         insert_address(cursor, entity_name, street_address, city, state, zip_code)
 
-# Function to read addresses from the file
-def read_addresses_from_file(file_path):
-    with open(file_path, 'r') as f:
-        return f.read().strip().split('\n\n')  # Assume each address is separated by a blank line
-    
-
-
 # Main function to execute the script
 
 # Function to read addresses from the file
@@ -77,17 +70,12 @@ def read_addresses_from_file(file_path):
 raw_addresses = read_addresses_from_file('addresses.txt')
 
 def create_addresses_table(sql_creds):
-    host = 'mysql.cs.uky.edu'
-    username = sql_creds.username  # Replace with your username
-    password = sql_creds.password  # Replace with your password
-    database = sql_creds.database  # Replace with your database name
-
+    
     raw_addresses = read_addresses_from_file('addresses.txt')
-    print(raw_addresses)
-    connection = connect_to_db(host, username, password, database)
+    connection = connect_to_db(sql_creds.host, sql_creds.username, sql_creds.password, sql_creds.database)
     if connection is not None:
         cursor = connection.cursor()
-        create_address_table(cursor)
+        initialize_address_table(cursor)
         parse_and_insert_addresses(cursor, raw_addresses)
         
         # Commit the changes
