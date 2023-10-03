@@ -19,11 +19,12 @@ def connect_to_db(host, username, password, database):
 def parse_phone_numbers(cursor, raw_addresses, logger):
     for raw_address in raw_addresses:
         lines = raw_address.split('\n')
-        name = lines[0]
-        phone_number = ""
-        if len(lines) > 3:
-            phone_number = lines[3]
-
+        name = lines[2].split(": ")[1].strip()
+        raw_phone_number = lines[7].split(": ")
+        if len(raw_phone_number) > 1:
+            phone_number = raw_phone_number[1].strip() 
+        
+        print(f"updating \"{name}\" with phone number: \"{phone_number}\"")
         update_query = f"UPDATE Addresses SET phone_numbers = %s WHERE EntityName = %s;"
         cursor.execute(update_query, (phone_number, name))
         if logger:

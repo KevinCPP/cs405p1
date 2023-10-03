@@ -33,8 +33,6 @@ def parse_and_insert_receipts(cursor, raw_receipts, logger):
     for receipt in raw_receipts:
         lines = receipt.strip().split('\n')
         
-        print(lines)
-
         location = lines[0].split(": ")[1]
         business_name = lines[1].split(": ")[1]
         date = lines[2].split(": ")[1]
