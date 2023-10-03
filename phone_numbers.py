@@ -21,6 +21,7 @@ def parse_phone_numbers(cursor, raw_addresses, logger):
         lines = raw_address.split('\n')
         name = lines[2].split(": ")[1].strip()
         raw_phone_number = lines[7].split(": ")
+        phone_number = ""
         if len(raw_phone_number) > 1:
             phone_number = raw_phone_number[1].strip() 
         
