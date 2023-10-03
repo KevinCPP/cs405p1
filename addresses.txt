@@ -1,34 +1,29 @@
-First Name: 
-Last Name:
-Entity Name: LexLive
-Street Address: 301 S Broadway
-City: Lexington
-State: KY
-Zip Code: 40508
-
 First Name: Ray
-Last Name: Hyatt
-Entity Name: Mr. Ray L. Hyatt Jr.
+Last Name: Hyatt Jr.
+Entity Name: Ray L. Hyatt Jr.
 Street Address: 300 Rose Street Room 102 Hardymon Building
 City: Lexington
 State: KY
-Zip Code: 40506 
+Zip Code: 40506
+Phone Numbers:
 
 First Name: Ray
-Last Name: Hyatt
-Entity Name: Mr. Ray L. Hyatt Jr.
+Last Name: Hyatt Jr.
+Entity Name: Ray L. Hyatt Jr.
 Street Address: 301 Hilltop Avenue, Room 102
 City: Lexington
 State: KY
-Zip Code: 40506 
+Zip Code: 40506
+Phone Numbers:
 
 First Name: John
 Last Name: Wick
 Entity Name: John Wick
-Street Address: 82 Beaver Street, Room 1301
+Street Address: 82 Beaver Street Room 1301
 City: New York
 State: NY
 Zip Code: 10005
+Phone Numbers: 5555555555
 
 First Name: Tony
 Last Name: Stark
@@ -36,15 +31,8 @@ Entity Name: Tony Stark
 Street Address: 200 Park Avenue, Penthouse
 City: New York
 State: NY
-Zip Code: 10001 
-
-First Name: Bob
-Last Name: Smith
-Entity Name: Bob C. Smith
-Street Address: 200 Park Avenue, Apartment 221
-City: New York
-State: NY
-Zip Code: 10001 
+Zip Code: 10001
+Phone Numbers: 5555553142
 
 First Name: Stephen
 Last Name: Strange
@@ -52,239 +40,35 @@ Entity Name: Dr. Stephen Strange
 Street Address: 117A Bleecker Street
 City: New York
 State: NY
-Zip Code: 10001 
+Zip Code: 10001
+Phone Numbers: 5555554321
 
-First Name: Bowman
+First Name: Bob C.
+Last Name: Smith
+Entity Name: Bob C. Smith
+Street Address: 200 Park Avenue, Apartment 221
+City: New York
+State: NY
+Zip Code: 10001
+Phone Numbers:
+
+First Name: Bowman F.
 Last Name: Wildcat
 Entity Name: Bowman F. Wildcat
 Street Address: 1 Avenue of Champions
 City: Lexington
 State: KY
-Zip Code: 40506 
+Zip Code: 40506
+Phone Numbers:
 
-First Name: Clark
-Last Name: Kent
-Entity Name: Clark Kent
-Street Address: 344 Clinton St Apt 3B
-City: Metropolis
-State: IL
-Zip Code: 60001
-
-First Name: 
-Last Name:
-Entity Name: Daily Planet
-Street Address: 1 Planet Plaza
-City: Metropolis
-State: IL
-Zip Code: 60001
-
-First Name: Barry 
-Last Name: Allen
-Entity Name: Barry Allen
-Street Address: 1 Sppedster Ln
-City: Central City
-State: MO
-Zip Code: 64106
-
-First Name: Oliver
-Last Name: Queen
-Entity Name: Oliver Queen
-Street Address: 1 Queen Mansion
-City: Starling City
-State: CA
-Zip Code: 90001
-
-First Name: 
-Last Name:
-Entity Name: S.T.A.R Labs
-Street Address: 600 Broadway
-City: Central City
-State: MO
-Zip Code: 64106
-
-First Name: Peter
-Last Name: Parker
-Entity Name: Peter Parker
-Street Address: 20 Ingram St Apt 4B
-City: Queens
-State: NY
-Zip Code: 11375
-
-First Name: 
-Last Name: 
-Entity Name: OsCorp Industries
-Street Address: 1 OsCorp Plaza
-City: New York
-State: NY
-Zip Code: 10001
-
-First Name: 
-Last Name:
-Entity Name: Tony's Pizza
-Street Address: 123 Food St
-City: New York
-State: NY
-Zip Code: 10012
-
-First Name: 
-Last Name:
-Entity Name: Central Park
-Street Address: 12 Central Park
-City: New York
-State: NY
-Zip Code: 10001
-
-First Name: 
-Last Name: 
-Entity Name: Dunder Mifflin
-Street Address: 1725 Slough Ave
-City: Scranton
-State: PA
-Zip Code: 18540
-
-First Name: Michael
-Last Name: Scott
-Entity Name: Michael Scott
-Street Address: 123 Paper St
-City: Scranton
-State: PA
-Zip Code: 18540
-
-First Name: Sherlock
-Last Name: Holmes
-Entity Name: Sherlock Holmes
-Street Address: 221B Baker St
-City: London
-State: UK
-Zip Code: WIU 6RJ 
-
-First Name: John
-Last Name: Watson
-Entity Name: John Watson
-Street Address: 221A Baker St
-City: London
-State: UK
-Zip Code: WIU 6RJ 
-
-First Name:
-Last Name:
-Entity Name: Hobbiton Cafe
-Street Address: 1 Hobbiton St
-City: Matamata
-State: NZ
-Zip Code: 3400
-
-First Name: Frodo
-Last Name: Baggins
-Entity Name: Frodo Baggins
-Street Address: Bag End, Hobbiton
-City: Matamata
-State: NZ
-Zip Code: 3400
-
-First Name: Luke
-Last Name: Skywalker
-Entity Name: Luke Skywalker
-Street Address: 1 Tatooine Ln
-City: Outer Rim
-State: TT
-Zip Code: 00001
-
-First Name: Darth
-Last Name: Vader
-Entity Name: Darth Vader
-Street Address: 1 Death Star
-City: Outer Rim
-State: DS
-Zip Code: 00001
-
-First Name:
-Last Name:
-Entity Name: Galactic Empire
-Street Address: Death Star
-City: Outer Rim
-State: DS
-Zip Code: 00001
-
-First Name:
-Last Name:
-Entity Name: Rebel Alliance
-Street Address: 1 Yavin St
-City: Outer Rim
-State: YV
-Zip Code: 00002
-
-First Name: James
-Last Name: Bond
-Entity Name: James Bond
-Street Address: 1 Secret Service
-City: London
-State: UK
-Zip Code: SW1A 1AA
-
-First Name:
-Last Name:
-Entity Name: MI6 Headquarters
-Street Address: 85 Albert Embankment
-City: London
-State: UK
-Zip Code: SE1 7TP
-
-First Name: Clint
-Last Name: Barton
-Entity Name: Clint Barton
-Street Address:  321 Archer St
-City: Waverly
-State: IA
-Zip Code: 50677
-
-First Name: Thor
-Last Name: Odinson
-Entity Name: Thor Odison
-Street Address: 1 Asgardian Way
-City: Asgard
-State: AS
-Zip Code: 00001
-
-First Name: 
-Last Name: 
-Entity Name: Stark Industries
-Street Address: 200 Park Avenue
-City: New York
-State: NY
-Zip Code: 10001
-
-First Name: Bruce
-Last Name: Wayne
-Entity Name: Bruce Wayne
-Street Address: 1007 Mountain Drive
-City: Gotham
-State: NY
-Zip Code: 10007
-
-First Name:
-Last Name: 
-Entity Name: Wayne Enterpreises
-Street Address: 1000 Wayne Tower
-City: Gotham
-State: NY
-Zip Code: 10007
-
-First Name: Diana
-Last Name: Prince
-Entity Name: Diana Prince
-Street Address:  Themyscira Island
-City: Washington
-State: DC
-Zip Code: 20004
-
-First Name: Bob
+First Name: Bob C.
 Last Name: Smith
 Entity Name: Bob C. Smith
 Street Address: 200 Park Avenue
 City: Lexington
 State: KY
 Zip Code: 40507
+Phone Numbers:
 
 First Name: Bob
 Last Name: Porter
@@ -293,14 +77,16 @@ Street Address: 1 Dead End Row, Room 200
 City: Dallas
 State: TX
 Zip Code: 12347
+Phone Numbers:
 
 First Name: Bob
 Last Name: Sydell
-Entity Name: Bob Sydell c/o Intech
+Entity Name: Mr. Bob Sydell c/o Intech
 Street Address: 1 Dead End Row, Room 200
 City: Dallas
 State: TX
 Zip Code: 12347
+Phone Numbers:
 
 First Name: Steve
 Last Name: Rogers
@@ -309,19 +95,274 @@ Street Address: 123 Patriot Lane
 City: Brooklyn
 State: NY
 Zip Code: 11201
+Phone Numbers:
 
-First Name: Natasha
-Last Name: Romanoff
-Entity Name: Natasha Romanoff
-Street Address: 400 Spy Ave
+First Name:
+Last Name:
+Entity Name: Walgreens
+Street Address: 3001 Pink Pigeon Pkwy
+City: Lexington
+State: KY
+Zip Code: 40509
+Phone Numbers: 8595438665
+
+First Name:
+Last Name:
+Entity Name: McDonald's
+Street Address: 1921 Plaudit Pl.
+City: Lexington
+State: KY
+Zip Code: 40509
+Phone Numbers: 8595439320
+
+First Name:
+Last Name:
+Entity Name: One Cafe
+Street Address: 101 Graham Ave
+City: Lexington
+State: KY
+Zip Code: 40506
+Phone Numbers: (859) 257-2538
+
+First Name:
+Last Name:
+Entity Name: Speedway
+Street Address: 803 South Broadway
+City: Lexington
+State: KY
+Zip Code: 40504
+Phone Numbers: 8592531773
+
+First Name:
+Last Name:
+Entity Name: Panda Express
+Street Address: 160 Ave Champions
+City: Lexington
+State: KY
+Zip Code: 40508
+Phone Numbers: 8592680009
+
+First Name:
+Last Name:
+Entity Name: Kung Fu Tea x TTK Fried Chicken
+Street Address: 685 S Limestone Ste 150
+City: Lexington
+State: KY
+Zip Code: 40503
+Phone Numbers: 8598102100
+
+First Name:
+Last Name:
+Entity Name: Baskin Robbins
+Street Address: 4971 N. Dixie Hwy
+City: Elizabethtown
+State: KY
+Zip Code: 42701
+Phone Numbers: 2702348831
+
+First Name:
+Last Name:
+Entity Name: OpenText
+Street Address: 810 Bull Lea Run
+City: Lexington
+State: KY
+Zip Code: 40511
+Phone Numbers: (800) 499-6544, (859) 286-2764
+
+First Name:
+Last Name:
+Entity Name: Central Business Systems, Inc.
+Street Address: 3138 Custer Drive Suite 210
+City: Lexington
+State: KY
+Zip Code: 40517
+Phone Numbers: (859) 276-1690
+
+First Name:
+Last Name:
+Entity Name: C-Forward
+Street Address: 401 W Main Street Suite 201
+City: Lexington
+State: KY
+Zip Code: 40507
+Phone Numbers: (859) 420-7810
+
+First Name:
+Last Name:
+Entity Name: Mirror Twin Brewing
+Street Address: 725 National Ave
+City: Lexington
+State: KY
+Zip Code: 40502
+Phone Numbers: (859) 447-8146
+
+First Name:
+Last Name:
+Entity Name: Maple Street Biscuit Company
+Street Address: 2270 Nicholasville Road Suite 120
+City: Lexington
+State: KY
+Zip Code: 40503
+Phone Numbers: (859) 554-5700
+
+First Name:
+Last Name:
+Entity Name: New York Business Technology
+Street Address: 401 E 89th St
 City: New York
 State: NY
-Zip Code: 10012
+Zip Code: 10128
+Phone Numbers: (212) 832-9650
 
-First Name: Bruce
-Last Name: Banner
-Entity Name: Bruce Banner
-Street Address: 789 Science Blvd
-City: Dayton
-State: OH
-Zip Code: 45402
+First Name:
+Last Name:
+Entity Name: IN NYC IT
+Street Address: 11 Broadway Suite 466
+City: New York
+State: NY
+Zip Code: 10004
+Phone Numbers: (212) 390-0190
+
+First Name:
+Last Name:
+Entity Name: Comptechnyc
+Street Address: 220 W 30th St 1st Floor
+City: New York
+State: NY
+Zip Code: 10001
+Phone Numbers: (347) 528-0614
+
+First Name:
+Last Name:
+Entity Name: Power Consulting Group
+Street Address: 127 W 26th St 8th floor
+City: New York
+State: NY
+Zip Code: 10001
+Phone Numbers: (855) 250-4634
+
+First Name:
+Last Name:
+Entity Name: Inova Software Inc
+Street Address: 15 Maiden Ln Suite 908
+City: New York
+State: NY
+Zip Code: 10038
+Phone Numbers: (212) 608-0771
+
+First Name: Howard
+Last Name: Castaneda
+Entity Name: Howard Castaneda
+Street Address: 188 Surfside Dr Apt B1
+City: Lexington
+State: KY
+Zip Code: 40503
+Phone Numbers: 8592349873
+
+First Name: Rhodri
+Last Name: Thornton
+Entity Name: Rhodri Thornton
+Street Address: 1800 Augusta Ct
+City: Lexington
+State: KY
+Zip Code: 40505
+Phone Numbers: 8592349876
+
+First Name: Jorge
+Last Name: Case
+Entity Name: Jorge Case
+Street Address: 501 Robertson St
+City: Lexington
+State: KY
+Zip Code: 40508
+Phone Numbers: 85908329874
+
+First Name: Ameera
+Last Name: Lucas
+Entity Name: Ameera Lucas
+Street Address: 101 Burke Rd
+City: Lexington
+State: KY
+Zip Code: 40511
+Phone Numbers: 8590219234
+
+First Name: Caiden
+Last Name: Marquez
+Entity Name: Caiden Marquez
+Street Address: 3800 Mariposa Ct
+City: Lexington
+State: KY
+Zip Code: 40515
+Phone Numbers: 8598210921
+
+First Name: Phoenix
+Last Name: Krueger
+Entity Name: Phoenix Krueger
+Street Address: 190 Avenue of The Americas
+City: New York
+State: NY
+Zip Code: 10013
+Phone Numbers: 2128994321
+
+First Name: Dillan
+Last Name: Byrne
+Entity Name: Dillan Byrne
+Street Address: 22 E 49th St
+City: New York
+State: NY
+Zip Code: 10017
+Phone Numbers: 2123445812
+
+First Name: Everly
+Last Name: Obrien
+Entity Name: Everly Obrien
+Street Address: 91 E 2nd St
+City: New York
+State: NY
+Zip Code: 10009
+Phone Numbers: 2123448543
+
+First Name: Lara
+Last Name: Salazar
+Entity Name: Lara Salazar
+Street Address: 139 Nagle Ave
+City: New York
+State: NY
+Zip Code: 10040
+Phone Numbers: 2123440987
+
+First Name: Max
+Last Name: Russell
+Entity Name: Max Russell
+Street Address: 304 W 92nd St
+City: New York
+State: NY
+Zip Code: 10025
+Phone Numbers: 2124530831
+
+First Name: Michael
+Last Name: Taylor
+Entity Name: Michael Taylor
+Street Address: 316 Duke Rd
+City: Lexington
+State: KY
+Zip Code: 40502
+Phone Numbers: 8594230991
+
+First Name: Anne
+Last Name: Young
+Entity Name: Anne Young
+Street Address: 617 Beechmont Rd
+City: Lexington
+State: KY
+Zip Code: 40502
+Phone Numbers: 8595439883
+
+First Name:
+Last Name:
+Entity Name: University of Kentucky
+Street Address: 401 Hilltop Ave
+City: Lexington
+State: KY
+Zip Code: 40506
+Phone Numbers: (859) 218-1881

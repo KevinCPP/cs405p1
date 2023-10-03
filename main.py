@@ -7,7 +7,7 @@ class SQL_Credentials:
     def __init__(self):
         self.host = "mysql.cs.uky.edu"
         self.username = "knco259"
-        self.password = "Papermario2001"
+        self.password = ""
         self.database = self.username
 
 def main():
