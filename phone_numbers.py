@@ -16,8 +16,26 @@ def connect_to_db(host, username, password, database):
         print(f"Error: {e}")
         return None
 
+def parse_phone_numbers(cursor, raw_addresses, logger):
+    for raw_address in raw_addresses:
+        lines = raw_address.split('\n')
+        name = lines[0]
+        phone_number = ""
+        if len(lines) > 3:
+            phone_number = lines[3]
+
+        update_query = f"UPDATE Addresses SET phone_numbers = %s WHERE EntityName = %s;"
+        cursor.execute(update_query, (phone_number, name))
+        if logger:
+            logger.write(update_query)
+
+# Function to read addresses from the file
+def read_phone_numbers_from_file(file_path):
+    with open(file_path, 'r') as f:
+        return f.read().strip().split('\n\n')  # Assume each address is separated by a blank line
+
 # Function to update the Addresses table and add phone numbers
-def update_addresses_with_phone_numbers(connection):
+def update_addresses_with_phone_numbers(connection, logger):
     cursor = connection.cursor()
     # Adding a new column for phone numbers in the Addresses table
 
@@ -25,32 +43,26 @@ def update_addresses_with_phone_numbers(connection):
     result = cursor.fetchone()
     if result is None:
         # Adding a new column for phone numbers in the Addresses table
-        cursor.execute("ALTER TABLE Addresses ADD COLUMN phone_numbers TEXT;")
+        new_column_cmd = "ALTER TABLE Addresses ADD COLUMN phone_numbers TEXT;"
+        cursor.execute(new_column_cmd)
+        if logger:
+            logger.write(new_column_cmd)
 
-    # Reading phone numbers from phone_numbers.txt
-    with open('phone_numbers.txt', 'r') as file:
-        lines = file.readlines()
+    raw_addresses = read_phone_numbers_from_file("phone_numbers.txt")
 
     # Parsing and updating the phone numbers
-    for line in lines:
-        name, phone_data = line.strip().split(": ")
-        phones = phone_data.split(',')
-        phone_str = ', '.join(phones)
-
-        # Update the Addresses table
-        update_query = f"UPDATE Addresses SET phone_numbers = %s WHERE EntityName = %s;"
-        cursor.execute(update_query, (phone_str, name))
+    parse_phone_numbers(cursor, raw_addresses, logger)
 
     print("Updated addresses with phone numbers")
 
     connection.commit()
     cursor.close()
 
-def create_phone_numbers_column(sql_creds):
+def create_phone_numbers_column(sql_creds, logger):
     # Connect to the database
     connection = connect_to_db(sql_creds.host, sql_creds.username, sql_creds.password, sql_creds.database)
     
     if connection:
         # Update the Addresses table with phone numbers
-        update_addresses_with_phone_numbers(connection)
+        update_addresses_with_phone_numbers(connection, logger)
         connection.close()

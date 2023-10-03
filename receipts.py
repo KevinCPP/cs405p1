@@ -12,8 +12,8 @@ def connect_to_database(sql_creds):
         print(f"Something went wrong: {err}")
         return None
 
-def initialize_receipts_table(cursor):
-    cursor.execute("""
+def initialize_receipts_table(cursor, logger):
+    create_table_cmd = """
     CREATE TABLE IF NOT EXISTS Receipts (
         ID INT AUTO_INCREMENT PRIMARY KEY,
         Location VARCHAR(255),
@@ -21,10 +21,12 @@ def initialize_receipts_table(cursor):
         Date DATE,
         TotalSale FLOAT,
         NumberOfItemsSold INT
-    )""")
-    print("Receipts table created successfully")
+    )"""
+    cursor.execute(create_table_cmd)
+    if logger:
+        logger.write(create_table_cmd)
 
-def parse_and_insert_receipts(cursor, raw_receipts):
+def parse_and_insert_receipts(cursor, raw_receipts, logger):
     for receipt in raw_receipts:
         lines = receipt.strip().split('\n')
         location = lines[0].split(": ")[1]
@@ -33,25 +35,28 @@ def parse_and_insert_receipts(cursor, raw_receipts):
         total_sale = float(lines[3].split(": ")[1].replace("$", ""))
 
         num_items_sold = int(lines[4].split(": ")[1])
-
-        cursor.execute("""
+        
+        insert_cmd = """
         INSERT INTO Receipts (Location, BusinessName, Date, TotalSale, NumberOfItemsSold)
         VALUES (%s, %s, %s, %s, %s)
-        """, (location, business_name, date, total_sale, num_items_sold))
+        """
+        cursor.execute(insert_cmd, (location, business_name, date, total_sale, num_items_sold))
+        if logger:
+            logger.write(insert_cmd)
 
-def create_receipts_table(sql_creds):
+def create_receipts_table(sql_creds, logger):
     conn = connect_to_database(sql_creds)
 
     if conn is not None:
         cursor = conn.cursor()
 
         # Create the Receipts table
-        initialize_receipts_table(cursor)
+        initialize_receipts_table(cursor, logger)
 
         # Read raw receipts from a text file and parse them
         with open("receipts.txt", 'r') as f:
             raw_receipts = f.read().strip().split("\n\n")  # Assume each receipt is separated by two newlines
-        parse_and_insert_receipts(cursor, raw_receipts)
+        parse_and_insert_receipts(cursor, raw_receipts, logger)
 
         conn.commit()
         cursor.close()
