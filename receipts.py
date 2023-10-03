@@ -22,7 +22,8 @@ def initialize_receipts_table(cursor, logger):
         TotalSale FLOAT,
         NumberOfItemsSold INT,
         Highest FLOAT,
-        Lowest FLOAT
+        Lowest FLOAT,
+        BuyerName VARCHAR(255)
     )"""
     cursor.execute(create_table_cmd)
     if logger:
@@ -31,6 +32,9 @@ def initialize_receipts_table(cursor, logger):
 def parse_and_insert_receipts(cursor, raw_receipts, logger):
     for receipt in raw_receipts:
         lines = receipt.strip().split('\n')
+        
+        print(lines)
+
         location = lines[0].split(": ")[1]
         business_name = lines[1].split(": ")[1]
         date = lines[2].split(": ")[1]
@@ -41,11 +45,13 @@ def parse_and_insert_receipts(cursor, raw_receipts, logger):
         highest = float(lines[5].split(": ")[1].replace("$", ""))
         lowest = float(lines[6].split(": ")[1].replace("$", ""))
         
+        buyer_name = lines[7].split(": ")[1]
+        
         insert_cmd = """
-        INSERT INTO Receipts (Location, BusinessName, Date, TotalSale, NumberOfItemsSold, Highest, Lowest)
-        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        INSERT INTO Receipts (Location, BusinessName, Date, TotalSale, NumberOfItemsSold, Highest, Lowest, BuyerName)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
         """
-        cursor.execute(insert_cmd, (location, business_name, date, total_sale, num_items_sold, highest, lowest))
+        cursor.execute(insert_cmd, (location, business_name, date, total_sale, num_items_sold, highest, lowest, buyer_name))
         if logger:
             logger.write(insert_cmd)
 

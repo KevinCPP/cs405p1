@@ -27,6 +27,8 @@ def initialize_address_table(cursor, logger):
     create_table_query = '''
     CREATE TABLE IF NOT EXISTS Addresses (
         ID INT AUTO_INCREMENT PRIMARY KEY,
+        FirstName VARCHAR(255),
+        LastName VARCHAR(255),
         EntityName VARCHAR(255) NOT NULL,
         StreetAddress VARCHAR(255),
         City VARCHAR(50),
@@ -39,12 +41,12 @@ def initialize_address_table(cursor, logger):
         logger.write(create_table_query)
 
 # Function to insert an address into the address table
-def insert_address(cursor, entity_name, street_address, city, state, zip_code, logger):
+def insert_address(cursor, last_name, first_name, entity_name, street_addr, city, state, zip_code, logger):
     insert_query = '''
-    INSERT INTO Addresses (EntityName, StreetAddress, City, State, ZipCode)
-    VALUES (%s, %s, %s, %s, %s);
+    INSERT INTO Addresses (LastName, FirstName, EntityName, StreetAddress, City, State, ZipCode)
+    VALUES (%s, %s, %s, %s, %s, %s, %s);
     '''
-    cursor.execute(insert_query, (entity_name, street_address, city, state, zip_code))
+    cursor.execute(insert_query, (last_name, first_name, entity_name, street_addr, city, state, zip_code))
     if logger:
         logger.write(insert_query)
 
@@ -52,14 +54,25 @@ def insert_address(cursor, entity_name, street_address, city, state, zip_code, l
 def parse_and_insert_addresses(cursor, raw_addresses, logger):
     for raw_address in raw_addresses:
         lines = raw_address.split('\n')
-        entity_name = lines[0]
-        street_address = lines[1]
-        city, state_zip = lines[2].split(", ")
-        state_zip_split = state_zip.split(" ")
-        state = state_zip_split[0]
-        zip_code = " ".join(state_zip_split[1:])
+        last_name_raw   = lines[0].split(": ")
+        first_name_raw  = lines[1].split(": ")
+        
+        last_name = ""
+        first_name = ""
 
-        insert_address(cursor, entity_name, street_address, city, state, zip_code, logger)
+        if len(last_name_raw) > 1:
+            last_name = last_name_raw[1].strip()
+
+        if len(first_name_raw) > 1:
+            first_name = first_name_raw[1].strip()
+
+        entity_name = lines[2].split(": ")[1].strip()
+        street_addr = lines[3].split(": ")[1].strip()
+        city        = lines[4].split(": ")[1].strip()
+        state       = lines[5].split(": ")[1].strip()
+        zip_code    = lines[6].split(": ")[1].strip()
+
+        insert_address(cursor, last_name, first_name, entity_name, street_addr, city, state, zip_code, logger)
 
 # Function to read addresses from the file
 def read_addresses_from_file(file_path):
