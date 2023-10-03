@@ -20,7 +20,9 @@ def initialize_receipts_table(cursor, logger):
         BusinessName VARCHAR(255),
         Date DATE,
         TotalSale FLOAT,
-        NumberOfItemsSold INT
+        NumberOfItemsSold INT,
+        Highest FLOAT,
+        Lowest FLOAT
     )"""
     cursor.execute(create_table_cmd)
     if logger:
@@ -36,16 +38,21 @@ def parse_and_insert_receipts(cursor, raw_receipts, logger):
 
         num_items_sold = int(lines[4].split(": ")[1])
         
+        highest = float(lines[5].split(": ")[1].replace("$", ""))
+        lowest = float(lines[6].split(": ")[1].replace("$", ""))
+        
         insert_cmd = """
-        INSERT INTO Receipts (Location, BusinessName, Date, TotalSale, NumberOfItemsSold)
-        VALUES (%s, %s, %s, %s, %s)
+        INSERT INTO Receipts (Location, BusinessName, Date, TotalSale, NumberOfItemsSold, Highest, Lowest)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
         """
-        cursor.execute(insert_cmd, (location, business_name, date, total_sale, num_items_sold))
+        cursor.execute(insert_cmd, (location, business_name, date, total_sale, num_items_sold, highest, lowest))
         if logger:
             logger.write(insert_cmd)
 
 def create_receipts_table(sql_creds, logger):
     conn = connect_to_database(sql_creds)
+    if logger:
+        logger.write("Begin Receipts Commands:")
 
     if conn is not None:
         cursor = conn.cursor()

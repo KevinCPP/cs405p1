@@ -67,6 +67,9 @@ def read_addresses_from_file(file_path):
         return f.read().strip().split('\n\n')  # Assume each address is separated by a blank line
 
 def create_addresses_table(sql_creds, logger):
+    if logger:
+        logger.write("Begin Addresses Commands:")
+
     raw_addresses = read_addresses_from_file('addresses.txt')
     connection = connect_to_db(sql_creds.host, sql_creds.username, sql_creds.password, sql_creds.database)
     if connection is not None:

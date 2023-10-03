@@ -61,7 +61,10 @@ def update_addresses_with_phone_numbers(connection, logger):
 def create_phone_numbers_column(sql_creds, logger):
     # Connect to the database
     connection = connect_to_db(sql_creds.host, sql_creds.username, sql_creds.password, sql_creds.database)
-    
+   
+    if logger:
+        logger.write("Begin Phone Numbers Commands:")
+
     if connection:
         # Update the Addresses table with phone numbers
         update_addresses_with_phone_numbers(connection, logger)
