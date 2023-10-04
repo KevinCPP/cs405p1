@@ -1,0 +1,135 @@
+Location: Lexington, KY
+Business Name: Mr. Ray L. Hyatt Jr.
+Date: 2023-09-20
+Total Sale: $120
+Number of Items Sold: 3
+Highest: $60
+Lowest: $20
+Buyer: Ammera Lucas
+
+Location: New York, NY
+Business Name: John Wick
+Date: 2023-09-15
+Total Sale: $200
+Number of Items Sold: 1
+Highest: $200
+Lowest: $200
+Buyer: Caiden Marquez
+
+Location: New York, NY
+Business Name: Tony Stark
+Date: 2023-09-10
+Total Sale: $500
+Number of Items Sold: 2
+Highest: $250
+Lowest: $250
+Buyer: Dillan Byrne
+
+Location: New York, NY
+Business Name: Dr. Stephen Strange
+Date: 2023-09-05
+Total Sale: $70
+Number of Items Sold: 5
+Highest: $20
+Lowest: $5
+Buyer: Howard Castaneda
+
+Location: Lexington, KY
+Business Name: Bowman F. Wildcat
+Date: 2023-08-30
+Total Sale: $90
+Number of Items Sold: 4
+Highest: $30
+Lowest: $10
+Buyer: Anne Young
+
+Location: Lexington, KY
+Business Name: Walgreens
+Date: 2023-10-02
+Total Sale: $21.06
+Number of Items Sold: 4
+Highest: $22.39
+Lowest: $5.99
+Buyer: Anne Young
+
+Location: Lexington, KY
+Business Name: McDonald's
+Date: 2023-10-02
+Total Sale: $21.06
+Number of Items Sold: 4
+Highest: $8.39
+Lowest: $1.11
+Buyer: Michael Taylor
+
+Location: Lexington, KY
+Business Name: One Cafe
+Date: 2023-10-02
+Total Sale: $2.12
+Number of Items Sold: 1
+Highest: $2.12
+Lowest: $2.12
+Buyer: Lara Salazar
+
+Location: Lexington, KY
+Business Name: Panda Express
+Date: 2023-09-29
+Total Sale: $34.13
+Number of Items Sold: 5
+Highest: $7.90
+Lowest: $1.50
+Buyer: Dillan Byrne
+
+Location: Lexington, KY
+Business Name: Kung Fu Tea x TKK Fried Chicken
+Date: 2023-10-03
+Total Sale: $9.74
+Number of Items Sold: 2
+Highest: $6.29
+Lowest: $4.45
+Buyer: Caiden Marquez
+
+Location: Lexington, KY
+Business Name: Baskin Robbins
+Date: 2023-08-05
+Total Sale: $8.26
+Number of Items Sold: 1
+Highest: $7.79
+Lowest: $8.26
+Buyer: Jorge Case
+
+Location: Lexington, KY
+Business Name: Speedway
+Date: 2023-10-01
+Total Sale: $11.12
+Number of Items Sold: 3
+Highest: $4.49
+Lowest: $2.99
+Buyer: Howard Castaneda
+
+Location: Lexington, KY
+Business Name: University of Kentucky
+Date: 2023-10-03
+Total Sale: $8.00
+Number of Items Sold: 1
+Highest: $8.00
+Lowest: $8.00
+Buyer: Dillan Byrne
+
+Location: Lexington, KY
+Business Name: Mirror Trend Brewing
+Date: 2023-10-01
+Total Sale: $513.21
+Number of Items Sold: 4
+Highest: $312.11
+Lowest: $39.99
+Buyer: Everly Obrien
+
+Location: Lexington, KY
+Business Name: Kung Fu Tea x TKK Fried Chicken
+Date: 2023-08-01
+Total Sale: $22.39
+Number of Items Sold: 4
+Highest: $12.11
+Lowest: $3.39
+Buyer: Michael Taylor
+
