@@ -43,10 +43,10 @@ def initialize_address_table(cursor, logger):
 # Function to insert an address into the address table
 def insert_address(cursor, last_name, first_name, entity_name, street_addr, city, state, zip_code, logger):
     insert_query = '''
-    INSERT INTO Addresses (LastName, FirstName, EntityName, StreetAddress, City, State, ZipCode)
+    INSERT INTO Addresses (FirstName, LastName, EntityName, StreetAddress, City, State, ZipCode)
     VALUES (%s, %s, %s, %s, %s, %s, %s);
     '''
-    cursor.execute(insert_query, (last_name, first_name, entity_name, street_addr, city, state, zip_code))
+    cursor.execute(insert_query, (first_name, last_name, entity_name, street_addr, city, state, zip_code))
     if logger:
         logger.write(insert_query)
 
@@ -54,16 +54,16 @@ def insert_address(cursor, last_name, first_name, entity_name, street_addr, city
 def parse_and_insert_addresses(cursor, raw_addresses, logger):
     for raw_address in raw_addresses:
         lines = raw_address.split('\n')
-        last_name_raw   = lines[0].split(": ")
-        first_name_raw  = lines[1].split(": ")
+        first_name_raw   = lines[0].split(": ")
+        last_name_raw  = lines[1].split(": ")
         
-        last_name = ""
         first_name = ""
-
-        if len(last_name_raw) > 1:
-            last_name = last_name_raw[1].strip()
+        last_name = ""
 
         if len(first_name_raw) > 1:
+            last_name = last_name_raw[1].strip()
+
+        if len(last_name_raw) > 1:
             first_name = first_name_raw[1].strip()
 
         entity_name = lines[2].split(": ")[1].strip()

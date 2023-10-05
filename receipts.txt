@@ -116,7 +116,7 @@ Lowest: $8.00
 Buyer: Dillan Byrne
 
 Location: Lexington, KY
-Business Name: Mirror Trend Brewing
+Business Name: Mirror Twin Brewing
 Date: 2023-10-01
 Total Sale: $513.21
 Number of Items Sold: 4
