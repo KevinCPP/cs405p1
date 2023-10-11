@@ -1,6 +1,6 @@
 First Name: Ray
 Last Name: Hyatt Jr.
-Entity Name: Ray L. Hyatt Jr.
+Entity Name: Mr. Ray L. Hyatt Jr.
 Street Address: 300 Rose Street Room 102 Hardymon Building
 City: Lexington
 State: KY
@@ -9,7 +9,7 @@ Phone Numbers:
 
 First Name: Ray
 Last Name: Hyatt Jr.
-Entity Name: Ray L. Hyatt Jr.
+Entity Name: Mr. Ray L. Hyatt Jr.
 Street Address: 301 Hilltop Avenue, Room 102
 City: Lexington
 State: KY
@@ -144,7 +144,7 @@ Phone Numbers: 8592680009
 
 First Name:
 Last Name:
-Entity Name: Kung Fu Tea x TTK Fried Chicken
+Entity Name: Kung Fu Tea x TKK Fried Chicken
 Street Address: 685 S Limestone Ste 150
 City: Lexington
 State: KY
@@ -275,7 +275,7 @@ Street Address: 501 Robertson St
 City: Lexington
 State: KY
 Zip Code: 40508
-Phone Numbers: 85908329874
+Phone Numbers: 8590832987
 
 First Name: Ameera
 Last Name: Lucas
